@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,13 +7,31 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 40px; /* Add padding to the bottom */
+    padding-bottom: 40px; /* Adds padding at the bottom */
+    background-color: #ffffff;
 }
 
+header {
+    width: 100%;
+    background-color: #007bff; /* Blue background color */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
 
 header h1 {
     font-size: 2.5rem;
-    margin: 1rem 0;
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 .intro {
@@ -46,11 +65,17 @@ header h1 {
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 350px; /* Fixed height for uniform sizing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card img {
     width: 100%;
+    height: 180px; /* Fixed height for images */
     border-radius: 10px;
+    object-fit: cover; /* Ensures images fit within dimensions */
 }
 
 .project-card h3 {
@@ -115,67 +140,4 @@ header h1 {
     max-width: 100%; /* Ensures responsiveness on smaller screens */
     margin: 0 auto; /* Center align the container */
     text-align: left;
-}
-
-.intro iframe {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.transcript {
-    display: none;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #333;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-header {
-    width: 100%;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    position: fixed;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
 }
