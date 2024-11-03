@@ -56,6 +56,8 @@ header nav a:hover {
     gap: 20px;
     padding: 20px;
     width: 90%;
+    max-width: 1200px; /* Set a max width to prevent stretching on large screens */
+    margin: 0 auto; /* Center the grid */
 }
 
 .project-card {
