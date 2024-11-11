@@ -50,6 +50,7 @@ header nav a:hover {
     margin-top: 0.5rem;
 }
 
+/* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three items per row */
@@ -60,14 +61,15 @@ header nav a:hover {
     margin: 0 auto; /* Center the grid */
 }
 
+/* Project Card */
 .project-card {
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 10px; /* Adjusted padding for smaller cards */
+    padding: 10px;
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    height: 300px; /* Slightly smaller height */
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,6 +90,10 @@ header nav a:hover {
 .project-card p {
     font-size: 1rem;
     color: #666;
+    margin: 0.5rem 0;
+    height: 40px; /* Set a fixed height for descriptions */
+    overflow: hidden; /* Hide overflow if description is too long */
+    text-overflow: ellipsis; /* Add ellipsis to indicate hidden text */
 }
 
 .button {
@@ -104,6 +110,7 @@ header nav a:hover {
     background-color: #0056b3;
 }
 
+/* Transcript */
 .transcript {
     display: none; /* Hidden by default */
     margin-top: 0.5rem;
@@ -133,10 +140,12 @@ header nav a:hover {
     width: 100%;
     max-width: 600px; /* Set a maximum width for videos */
     min-width: 300px; /* Optional: set a minimum width to prevent shrinking */
-    height: auto;
+    height: 250px; /* Adjusted height for taller videos */
     margin-top: 0.5rem;
 }
 
+
+/* Content Container */
 .content-container {
     width: 600px; /* Fixed width to prevent resizing */
     max-width: 100%; /* Ensures responsiveness on smaller screens */
